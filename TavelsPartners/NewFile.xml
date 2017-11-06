@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+
+<parameter name="appURL" value="http://www.phptravels.net/login"/>
+<!--  --><parameter name="browserType" value="FirefoxDriver"/>
+
+  <test name="Test">
+    <classes>
+      
+     <!--  --> <class name="com.util.Browser"/>
+	
+      <class name="com.Test.ForgotPasswordTest"/>
+      <class name="com.Test.SignUpTest"/>
+      
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

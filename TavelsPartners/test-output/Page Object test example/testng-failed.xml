@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Page Object test example]">
+  <parameter name="appURL" value="http://www.phptravels.net/login"/>
+  <parameter name="browserType" value="FirefoxDriver"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.Test.SignUpTest">
+        <methods>
+          <include name="enterAlphaNumericFirstandLastNameSignUp"/>
+        </methods>
+      </class> <!-- com.Test.SignUpTest -->
+      <class name="com.Test.ForgotPasswordTest">
+        <methods>
+          <include name="initializeBase"/>
+          <include name="beforeTest"/>
+          <include name="enterinvalidEmail"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- com.Test.ForgotPasswordTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->
